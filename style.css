@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+    background-color: rgb(95, 207, 29);
+}
+
+h1{
+    text-align: center;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Top{
+    background-color: white;
+    height: 155px;
+    width: 195px;
+    border-radius: 0 0 90px 90px;
+    display: inline-block;
+    position: relative;
+    top: 70px;
+    left: 750px;
+    z-index: 1;
+    transform: rotate(180deg);
+    animation: drop-in 2s;
+    animation-iteration-count: infinite;
+}
+.eye1{
+    background-color: black;
+    height: 25px;
+    width: 28px;
+    border-radius: 50%;
+    position: absolute;
+    top: 55px;
+    left: 40px;
+}
+.eye2{
+    background-color: black;
+    height: 25px;
+    width: 28px;
+    border-radius: 50%;
+    position: absolute;
+    top: 55px;
+    right: 40px;
+}
+.bot{
+    background-color:white;
+    height: 185px;
+    width: 200px;
+    border-radius: 0 0 95px 95px;
+    display: inline-block;
+    top: 265px;
+    left: 550px;
+    position: relative;
+    animation: drop-in-2s;
+    animation-iteration-count: infinite;
+}
+.left{
+    background-color: white;
+    height: 120px;
+    width: 40px;
+    border-radius: 30px;
+    display: inline-block;
+    top: 355px;
+    left: 700px;
+    position: absolute;
+    animation: drop-in 2s;
+    animation-iteration-count: infinite;
+}
+.right{
+    background-color:  white;
+    height: 120px;
+    width: 40px;
+    border-radius: 30px;
+    display: inline-block;
+    top: 355px;
+    left: 960px;
+    position: absolute;
+    animation: drop-in 2s;
+    animation-iteration-count: infinite;
+}
+.leftleg{
+    background-color: white;
+    height: 120px;
+    width: 40px;
+    border-radius: 30px;
+    display: inline-block;
+    top: 480px;
+    left: 790px;
+    position: absolute;
+    animation: drop-in 2s;
+    animation-iteration-count: infinite;
+}
+.rightleg{
+    background-color: white;
+    height: 120px;
+    width: 40px;
+    border-radius: 30px;
+    display: inline-block;
+    top: 480px;
+    left: 870px;
+    position: absolute;
+    animation: drop-in 2s;
+    animation-iteration-count: infinite;
+}
+.Top:hover{
+    animation: moveTop 2s infinite;
+}
+.bot:hover{
+    border-radius: 40%;
+    animation: movebot 2s infinite;
+}
+.left:hover{
+    animation: moveleft 2s infinite;
+}
+.right:hover{
+    animation: moveright 2s infinite;
+}
+.leftleg:hover{
+    animation: moveleftleg 2s infinite;
+}
+.rightleg:hover{
+    animation: moverightleg 2s infinite;
+}
+@keyframes moveTop{
+    0%{
+        width:200px;
+    }
+    25%{
+        width: 300px;
+    }
+    50%{
+        width:200px;
+    }
+    75%{
+        width:300px;
+    }
+    100%{
+        transform:rotate(0deg);
+        tranform-origin:top center;
+    }
+}
+
+@keyframes moveright{
+    0%{
+        transform:rotate(0deg);
+        transform-origin:top center;
+    }
+    25%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+    }
+}
+
+
+
+
+
+
+
+
+
